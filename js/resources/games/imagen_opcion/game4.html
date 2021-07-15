@@ -1,0 +1,18 @@
+<div ng-controller="Game04Controller as Game04">
+    <h2 class="silabas1-palabraclave">
+        <span ng-repeat="palabra in  Game04.objetoSilabasResultado  track by $index">{{palabra}}</span>
+    </h2>
+
+
+    <div class="row">
+        <div ng-click="Game04.seleccion(opcion)" class="btn btn-teclado2 btn-chico2"
+            ng-repeat="opcion in Game04.opciones  track by $index">{{opcion}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div ng-click="Game04.reset()" class="btn btn-opcion3 btn-info">
+            Reset
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="container">
+<div class="row">
+    <a href="" ng-click="gameList.goToList()"><button class="btn btn-secondary" style='margin: 8px; text-align: center;'> <i class='fas fa-angle-double-left'></i>Volver a</button></a>
+    <h1 class="title">{{gameList.gameToPlay.nombre}}</h1>  
+</div>
+
+
+<div ng-switch="gameList.gameToPlay.cuento" ng-style="juegoBox" class="juegoBox">
+
+    <div ng-switch-when="imagen-opcion">
+        <div ng-include="'js/resources/games/imagen_opcion/home.html'"></div>
+    </div>
+
+    <div ng-switch-when="palabras">
+        <div ng-include="'js/resources/games/palabras/home.html'"></div>
+    </div>
+
+    <div ng-switch-when="3">
+        <div ng-include="'js/resources/games/game3/home.html'"></div>
+    </div>
+
+    <div ng-switch-when="4">
+        <div ng-include="'js/resources/games/Game04/home.html'"></div>
+    </div>
+
+    <div ng-switch-default>
+
+    </div>
+</div>
+</div>

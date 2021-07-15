@@ -1,0 +1,62 @@
+<div class="container" >
+    <div class="juego-box-grande"  >
+        <div class="" style="display: flex; width: 100%;">
+
+            <div class="col-6">
+                <div style="width: 100%;">
+                <img class="imagen-opcion" src="{{imagen}}" alt="">
+            </div>
+            </div>
+
+            <div class="col-6 align-center">
+                <div >
+                    <div ng-switch="gameStatus" style="width: 100%;">
+
+                        <div  ng-switch-when="won">
+                            <div ng-include="'js/resources/games/imagen_opcion/won.html'"></div>
+                        </div>
+
+                        <div   ng-switch-when="lost">
+                            <div ng-include="'js/resources/games/imagen_opcion/lost.html'"></div>
+                        </div>
+
+                        <div  ng-switch-when="play">
+
+                            <div ng-switch="gameList.gameToPlay.id">
+                                <div  ng-switch-when="1"  >
+                                    <div ng-include="'js/resources/games/imagen_opcion/game1.html'"  ></div>
+                                </div>
+
+                                <div ng-switch-when="2" > 
+                                    <div ng-include="'js/resources/games/imagen_opcion/game2.html'"></div>
+                                </div>
+
+                                <div ng-switch-when="3"  >
+                                    <div ng-include="'js/resources/games/imagen_opcion/game3.html'"></div>
+                                </div>
+
+                                <div ng-switch-when="4">
+                                    <div ng-include="'js/resources/games/imagen_opcion/game4.html'"></div>
+                                </div>
+
+                                <div ng-switch-default></div>
+
+                            </div>
+                        </div>
+
+
+
+                        <div ng-switch-default></div>
+
+                    </div>
+                    
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</div>

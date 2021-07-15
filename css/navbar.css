@@ -1,0 +1,15 @@
+.navbar {
+    background-color: #fff;
+    height: 70px;
+}
+
+h2.titulo {
+    padding: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    vertical-align: bottom;
+}
+
+li.nav-item {
+    color: gray;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="intera">
+<meta charset="utf-16">
+
+<div ng-init='ListaJuegos=[{"id":1,"nombre":"Completa la palabra con las letras que faltan","cuento":"imagen-opcion","descripcion":"Lectura\/Escritura","dificultad":"Dificil","foto":"img\/juegos\/1b.jpg","mercadopago":null,"created_at":null,"updated_at":null},{"id":2,"nombre":"Selecciona la palabra correcta","cuento":"imagen-opcion","descripcion":"Lectura\/Escritura","dificultad":"Facil","foto":"img\/juegos\/2.jpg","mercadopago":null,"created_at":null,"updated_at":null},{"id":3,"nombre":"Selecciona la silaba correcta","cuento":"imagen-opcion","descripcion":"Lectura\/Escritura","dificultad":"Medio","foto":"img\/juegos\/3.jpg","mercadopago":null,"created_at":null,"updated_at":null},{"id":4,"nombre":"Arma la palabra con las silabas correctas","cuento":"imagen-opcion","descripcion":"Lectura\/Escritura","dificultad":"Medio","foto":"img\/juegos\/4.jpg","mercadopago":null,"created_at":null,"updated_at":null}]'></div>
+
+
+</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intera - Crecer aprendiendo</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/Main.css">
+
+
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <!--AngularJS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="//code.angularjs.org/snapshot/angular-animate.js"></script>
+
+    <!--AngularJS Scripts-->
+    <script src="js/App.js"></script>
+    <script src="js/Controllers/GameList.js"></script>
+    <script src="js/Controllers/Game01.js"></script>
+    <script src="js/Controllers/Game02.js"></script>
+    <script src="js/Controllers/Game03.js"></script>
+    <script src="js/Controllers/Game04.js"></script>
+
+
+    <script src="js/Services/Services.js"></script>
+
+ <!--
+    <script src="js/json/juegos.json"></script>
+-->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <!--Awesome Font Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/fontawesome/css/all.css" rel="stylesheet">
+
+    <!--Adicional Scripts-->
+
+
+</head>
+
+<body >
+    <div ng-controller="GameListController as gameList">
+        <div class="container-fluid " >
+            <div class="container-fluid">
+                <div ng-switch="gameList.view">  
+                    <div ng-switch-when="gameList">
+                        <div ng-include="'js/resources/gameList.html'"></div>
+                    </div>
+                    <div ng-switch-when="gameRandom">
+                        <div ng-include="'js/resources/gameRandom.html'"></div>
+                    </div>
+                    <div ng-switch-when="gameLevels">
+                        <div ng-include="'js/resources/gameLevels.html'"></div>
+                    </div>
+                    <div ng-switch-when="gameBlocked">
+                        <div ng-include="'js/resources/gameBlocked.html'"></div>
+                    </div>
+                    <div ng-switch-default>
+
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    
+        
+    </div>
+</body>
+</html>
+

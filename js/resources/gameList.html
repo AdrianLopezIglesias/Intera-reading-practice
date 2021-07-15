@@ -1,0 +1,73 @@
+<h1 class="title">Intera {{gameList.changed}}</h1>
+<div class="container">
+<div class="row">
+
+    <div class="col">
+        <div class="form-group">
+            <label for="sortBy">Área de Trabajo</label>
+
+            <select class="form-control" id="sortBy" ng-change="gameList.filterList()"
+                ng-model="gameList.filterStatusValue">
+                <option value="todos" selected="selected" >Todas</option>
+                <option value="Lectura/Escritura">Lectura/Escritura</option>
+                <option value="Matematica">Matemática</option>
+                <option value="Otros">Otros</option>
+            </select>
+
+        </div>
+    </div>
+
+
+    <div class="col">
+        <div class="form-group">
+            <label for="sortBy">Dificultad</label>
+
+            <select class="form-control" id="sortBy" ng-change="gameList.filterList()"
+                ng-model="gameList.filterDificultyValue">
+                <option value="todas" selected="selected">Todas</option>
+                <option value="Facil">Facil</option>
+                <option value="Medio">Medio</option>
+                <option value="Dificil">Dificil</option>
+            </select>
+        </div>
+    </div>
+
+</div>
+<div class="">
+
+
+    <div class="row">
+        <div class="container-fluid">
+        <div class="btn btn-block btn-teclado2  disabled" id="jugar_seleccionados" ng-click="jugar_seleccionados()" disabled>Seleccione uno o más juegos</div>
+    
+        <br></div>
+        <table class="table">
+            <tr>
+                <th style="text-align: center">Seleccion</th>
+                <th>Titulo</th>
+                <th>Área</th>
+                <th>Dificultad</th>
+            </tr>
+            <tr ng-repeat="game in gameList.filteredList">
+                    <td style="text-align: center">
+                        <input type="checkbox" id="checkbox{{ game.id }}" ng-click="gameList.selectGames(game.id)" >
+                    </td>
+                    <td>
+                        <a href="" ng-click="gameList.selectGames(game.id)">
+                            {{ game.nombre }}
+                        </a>
+                    </td>
+                    <td>{{ game.descripcion }}</td>
+                    <td>{{ game.dificultad }}</td>
+                </a>
+            </tr>
+        </table>
+     
+
+
+
+
+
+    </div>
+</div>
+</div>

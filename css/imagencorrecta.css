@@ -1,0 +1,91 @@
+label {
+    font-size: 26px;
+    display: table-cell
+}
+
+.asd {
+    height: 50vh;
+    width: 100%;
+    align-items: center;
+}
+
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card {
+    margin-bottom: 20px;
+
+    box-shadow: 1px 1px 3px;
+}
+
+.card-text {
+    padding: 2px;
+}
+
+h3.card-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 800;
+    background: -webkit-linear-gradient(#00cccc, #0099cc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+div.card {
+    transition: 1s ease;
+}
+
+div.card:hover {
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+
+}
+
+a {
+    color: #000000 !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: none !important;
+}
+
+.position-fixed2 {
+    position: absolute;
+    right: 25;
+}
+
+.small-margin {
+    margin-right: 25px;
+}
+h1.palabra {
+    text-align: center;
+    padding: 3px;
+    font-size: 50px;
+    font-weight: 800;
+    background: -webkit-linear-gradient(#00cccc, #0099cc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    */
+}
+h1.intrusa {
+    text-align: center;
+    padding: 3px;
+    font-size: 50px;
+    font-weight: 800;
+    background: -webkit-linear-gradient(#ff0000, #ff99cc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    */
+}

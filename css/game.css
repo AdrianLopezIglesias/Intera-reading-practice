@@ -1,0 +1,178 @@
+.row {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+
+
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+.left-box {
+    height: 100%;
+    flex: 15%;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    overflow-x: hidden;
+    padding-top: 20px;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.right-box {
+    height: 100%;
+    flex: 15%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow-x: hidden;
+    padding-top: 20px;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.resource {
+    /* border-style: solid; */
+    margin: 10px;
+    padding: 3px;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    ;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 5px;
+}
+
+.center-box {
+    flex: 70%;
+    height: 100%;
+    flex-wrap: nowrap;
+}
+
+body {
+    height: 98vh
+}
+
+.field-box {
+    top: 0;
+    height: 60%;
+}
+
+. {}
+
+.action-box {
+    display: flex;
+    flex-wrap: wrap;
+    bottom: 0;
+    height: 40%;
+    width: 100%;
+    padding: 4px;
+    text-align: center;
+    overflow-x: hidden;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.hand-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    padding: 4px;
+}
+
+
+
+
+.hand-filter-box {
+    height: 100%;
+    flex: 20%;
+    background: #b3b3b3;
+}
+
+.hand-card-list {
+    padding: 4px;
+    height: 100%;
+    flex: 30%;
+    background: #b3b3b3;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-description-box {
+    height: 100%;
+    flex: 50%;
+
+}
+
+.form-control {
+    color: dimgray
+}
+
+.btn {
+    margin-top: 4px;
+}
+
+.list-card {
+    width: 100%;
+}
+
+
+.card-description-picture {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.propuestas {
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    flex: 10%;
+
+    padding: 4px;
+    margin: 4px;
+    border: 1px solid gray;
+    border-radius: 12px;
+}
+
+.propuesta-description-box {
+    height: 400px;
+    display: flex;
+    flex: 50%;
+    flex-direction: column;
+    flex-grow: 1;
+
+    padding: 4px;
+    margin: 4px;
+    border: 1px solid gray;
+    border-radius: 12px;
+}
+
+
+.propuesta-button {
+    margin-top: auto;
+    padding: 4px;
+    align-content: center
+}
+
+.propuestas-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 400px;
+    padding: 4px;
+}
+
+p.propuesta-description-tale {}

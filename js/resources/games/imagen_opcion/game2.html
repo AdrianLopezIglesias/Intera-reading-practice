@@ -1,0 +1,7 @@
+<div ng-controller="Game2Controller as game2">
+    <div class="row">
+        <div ng-click="game2.seleccion(opcion)" class="btn btn-teclado2 " style="width: 100%"
+            ng-repeat="opcion in game2.opciones  track by $index">{{opcion.objeto}}</div>
+    </div>
+</div>
+

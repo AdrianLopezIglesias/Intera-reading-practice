@@ -1,0 +1,55 @@
+<div class="container" >
+    <div class="juego-box-grande"  >
+        <div class="" style="display: flex; width: 100%;">
+            <div class="align-center">
+                <div >
+                    <div ng-switch="gameStatus" style="width: 100%;">
+
+                        <div  ng-switch-when="won">
+                            <div ng-include="'js/resources/games/palabras/won.html'"></div>
+                        </div>
+
+                        <div   ng-switch-when="lost">
+                            <div ng-include="'js/resources/games/palabras/lost.html'"></div>
+                        </div>
+
+                        <div  ng-switch-when="play">
+
+                            <div ng-switch="gameList.gameToPlay.id">
+                                <div  ng-switch-when="5"  >
+                                    <div ng-include="'js/resources/games/palabras/game1.html'"  ></div>
+                                </div>
+
+                                <div ng-switch-when="6" > 
+                                    <div ng-include="'js/resources/games/palabras/game2.html'"></div>
+                                </div>
+
+                                <div ng-switch-when="7"  >
+                                    <div ng-include="'js/resources/games/palabras/game3.html'"></div>
+                                </div>
+
+                                <div ng-switch-when="8">
+                                    <div ng-include="'js/resources/games/palabras/game4.html'"></div>
+                                </div>
+
+                                <div ng-switch-default></div>
+
+                            </div>
+                        </div>
+
+
+
+                        <div ng-switch-default></div>
+
+                    </div>
+                    
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</div>

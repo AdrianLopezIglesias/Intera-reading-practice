@@ -1,0 +1,31 @@
+CARPETA ANIMALES
+
+lefante 
+jirafa
+cebra
+tortuga acuática
+tortuga
+cangrejo
+pulpo
+puercoespin
+rinoceronte
+hipopotamo
+cocodrilo
+iguana
+tiburón
+delfin
+orca (buscar alguna mas, en otra web)
+mono
+oso
+koala
+serpiente
+suricata
+
+insectos:
+mariposa
+abeja
+hormigas
+mosquito
+araña
+
+CARPETA OBJETOS

@@ -1,0 +1,14 @@
+
+<div ng-controller="Game1Controller as game1">
+    <div class="row align-center" style="width: 100%; border: 1px solid gray; 
+    ">
+        <h2 class="silabas1-palabraclave">
+            <span ng-repeat="letra in game1.palabraArray  track by $index">{{letra}}</span>
+        </h2>
+    </div>
+    <br>
+    <div class="row keyboard-box" style="">
+        <div ng-click="game1.letra(letra)" class="btn btn-teclado2 btn-chico" 
+            ng-repeat="letra in game1.abecedario track by $index">{{letra}}</div>
+    </div>
+</div>

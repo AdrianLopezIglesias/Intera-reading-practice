@@ -1,0 +1,12 @@
+<div ng-controller="Game3Controller as game3">
+
+    <h2 class="silabas1-palabraclave">
+        <span ng-repeat="letra in game3.palabraArray  track by $index">{{letra}}</span>
+    </h2>
+
+    <div class="row align-center">
+        <div ng-click="game3.seleccion(opcion)" class="btn btn-teclado2 " style="width: 100%"
+            ng-repeat="opcion in game3.opciones  track by $index">{{opcion}}</div>
+    </div>
+
+</div>
